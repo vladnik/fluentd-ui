@@ -5,6 +5,6 @@ EXPOSE 9292
 
 VOLUME ["/root"]
 
-RUN gem install -N fluentd-ui
+RUN gem install --no-document --version 0.4.2 fluentd-ui
 
 CMD ["fluentd-ui", "start"]
